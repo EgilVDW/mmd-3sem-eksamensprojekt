@@ -1,0 +1,14 @@
+@use "_colors.scss" as c;
+@use "_fonts.scss" as f;
+
+body {
+    margin: 0;
+    background-color: c.$background;
+}
+
+nav {
+    display: block;
+    position: sticky;
+    height: 4rem; // Placeholder
+    background-color: c.$primary;
+}
