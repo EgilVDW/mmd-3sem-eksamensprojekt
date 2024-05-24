@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LeaderboardView from '../views/SortingGuideView.vue'
+import SortingGuideView from '../views/SortingGuideView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +13,7 @@ const router = createRouter({
     {
       path: '/sorteringsguide',
       name: 'sortingguide',
-      component: LeaderboardView
+      component: SortingGuideView
     }
   ]
 })
