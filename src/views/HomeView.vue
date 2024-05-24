@@ -1,11 +1,12 @@
 <script setup>
+import NavigationBar from '../components/NavigationBar.vue'
 import Hero from '../components/Hero.vue'
 import Topics from '../components/Topics.vue'
 </script>
 
 <template>
   <header>
-    <nav />
+    <NavigationBar />
   </header>
   <main>
     <Hero />
