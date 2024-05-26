@@ -1,15 +1,14 @@
 <script setup>
-import SearchBar from '../components/SearchBar.vue'
+import NavigationBar from '../components/NavigationBar.vue'
 import Categories from '../components/Categories.vue'
 </script>
 
 <template>
   <header>
-    <nav />
+    <NavigationBar />
   </header>
   <main>
     <div class="container">
-      <SearchBar />
       <Categories />
     </div>
   </main>

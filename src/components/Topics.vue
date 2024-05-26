@@ -1,6 +1,6 @@
 <script setup>
-import TopicCard from '../components/TopicCard.vue'
-import IconSortingGuide from '../assets/icons/IconSortingGuide.vue'
+import TopicCard from './TopicCard.vue'
+import IconSortingGuide from '@/assets/icons/IconSortingGuide.vue'
 </script>
 
 <template>

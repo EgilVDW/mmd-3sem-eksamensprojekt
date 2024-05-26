@@ -1,6 +1,6 @@
 @use "_colors.scss" as c;
 @use "_fonts.scss" as f;
-@use "_media.scss" as m;
+@use "_variables.scss" as v;
 
 body {
   margin: 0;
@@ -13,7 +13,6 @@ header {
   top: 0;
 }
 
-// Placeholder
 nav {
   padding: 2rem 0;
   background-color: c.$primary;
@@ -27,7 +26,7 @@ nav {
     gap: 1rem;
     margin: 0 auto;
     padding: 0 1rem;
-    max-width: m.$large;
+    max-width: v.$media-large;
     li {
       @extend h4;
       display: inline;
@@ -55,12 +54,11 @@ nav {
     background-color: transparent;
     color: c.$on-surface;
     font-size: 1.5rem;
-    transition: 200ms;
+    transition: v.$transition-default;
     cursor: pointer;
     &:hover {
       background-color: c.$on-surface;
       color: c.$surface;
-      transition: 200ms;
     }
   }
 }
@@ -72,7 +70,7 @@ nav {
   box-sizing: content-box;
   margin: 4rem auto;
   padding: 0 1rem;
-  max-width: m.$large;
+  max-width: v.$media-large;
   text-align: center;
 }
 
@@ -94,18 +92,17 @@ nav {
       text-decoration: underline;
       .icon {
         transform: scale(1.25);
-        transition: 200ms;
       }
     }
     .icon {
       color: c.$secondary;
-      transition: 200ms;
+      transition: v.$transition-default;
     }
   }
-  @media screen and (min-width: m.$small) {
+  @media screen and (min-width: v.$media-small) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (min-width: m.$medium) {
+  @media screen and (min-width: v.$media-medium) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -137,8 +134,11 @@ nav {
   button {
     all: unset;
     cursor: pointer;
-    &:hover {
-      opacity: 1;
+    .icon {
+      transition: v.$transition-default;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -157,10 +157,9 @@ nav {
     padding: 1rem;
     background-color: c.$surface;
     color: c.$on-surface;
-    transition: 200ms;
+    transition: v.$transition-default;
     cursor: pointer;
     &:hover {
-      transition: 200ms;
       transform: translate(.5rem);
     }
     .icon {
