@@ -1,7 +1,6 @@
 <script setup>
 import NavigationBar from '../components/NavigationBar.vue'
-import Hero from '../components/Hero.vue'
-import Topics from '../components/Topics.vue'
+import Categories from '../components/Categories.vue'
 </script>
 
 <template>
@@ -9,10 +8,8 @@ import Topics from '../components/Topics.vue'
     <NavigationBar />
   </header>
   <main>
-    <Hero />
     <div class="container">
-      <h2>Emner</h2>
-      <Topics />
+      <Categories />
     </div>
   </main>
 </template>
