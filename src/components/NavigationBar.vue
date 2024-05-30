@@ -1,14 +1,15 @@
 <script setup>
-import IconSearch from '@/assets/icons/IconSearch.vue'
+import Logo from '@/assets/images/logo.png';
+import IconSearch from '@/assets/icons/IconSearch.vue';
 </script>
 
 <template>
   <nav>
     <ul>
       <li>
-        <a>
-          Logo
-        </a>
+        <RouterLink to="/">
+          <img :src="Logo" class="icon">
+        </RouterLink>
       </li>
       <li>
         <a>

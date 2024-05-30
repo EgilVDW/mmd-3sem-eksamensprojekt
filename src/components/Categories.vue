@@ -1,8 +1,8 @@
 <script setup>
-import { ref, watch } from 'vue'
-import CategoryCard from './CategoryCard.vue'
-import IconClose from '@/assets/icons/IconClose.vue'
-import IconSearch from '@/assets/icons/IconSearch.vue'
+import { ref, watch } from 'vue';
+import CategoryCard from './CategoryCard.vue';
+import IconClose from '@/assets/icons/IconClose.vue';
+import IconSearch from '@/assets/icons/IconSearch.vue';
 
 const categories = ref([]);
 const filteredCategories = ref([]);

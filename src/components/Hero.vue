@@ -5,6 +5,8 @@
       <br>
       HAVEAFFALD
     </h1>
-    <button>Læs mere</button>
+    <RouterLink to="/sorteringsguide/haveaffald">
+      <button>Læs mere</button>
+    </RouterLink>
   </div>
 </template>

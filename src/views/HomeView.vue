@@ -1,7 +1,8 @@
 <script setup>
-import NavigationBar from '../components/NavigationBar.vue'
-import Hero from '../components/Hero.vue'
-import Topics from '../components/Topics.vue'
+import NavigationBar from '@/components/NavigationBar.vue';
+import Hero from '@/components/Hero.vue';
+import Topics from '@/components/Topics.vue';
+import FooterContent from '@/components/FooterContent.vue';
 </script>
 
 <template>
@@ -15,4 +16,7 @@ import Topics from '../components/Topics.vue'
       <Topics />
     </div>
   </main>
+  <footer>
+    <FooterContent />
+  </footer>
 </template>
