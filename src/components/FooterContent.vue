@@ -134,30 +134,30 @@ import IconArrowRight from '@/assets/icons/IconArrowRight.vue';
       </li>
       <br>
       <li>
-        <h3>Find os</h3>
+        <h3>Hjemmesiden</h3>
       </li>
       <li>
         <RouterLink to="/">
           <IconArrowRight />
-          Facebook
+          Persondata
         </RouterLink>
       </li>
       <li>
         <RouterLink to="/">
           <IconArrowRight />
-          LinkedIn
+          Få siden læst højt (adgang for alle)
         </RouterLink>
       </li>
       <li>
         <RouterLink to="/">
           <IconArrowRight />
-          Twitter
+          Tilgængelighedserklæring
         </RouterLink>
       </li>
       <li>
         <RouterLink to="/">
           <IconArrowRight />
-          Instagram
+          Translate
         </RouterLink>
       </li>
     </ul>
