@@ -290,3 +290,23 @@ footer {
     }
   }
 }
+
+.sites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  a {
+    @extend h2;
+  }
+}
+
+.site-config {
+  div {
+    margin: 2rem 0;
+    input[type="text"] {
+      @extend h4;
+    }
+  }
+}

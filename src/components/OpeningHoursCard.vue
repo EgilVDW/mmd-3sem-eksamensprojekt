@@ -1,7 +1,3 @@
-<script setup>
-import OpeningHoursCard from '@/components/OpeningHoursCard.vue';
-</script>
-
 <template>
   <div class="opening-hours-card">
     <h3>

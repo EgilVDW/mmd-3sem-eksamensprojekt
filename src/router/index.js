@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import SortingGuideView from '@/views/SortingGuideView.vue'
-import GardenWasteView from '@/views/GardenWasteView.vue'
+import WasteCategoryView from '@/views/WasteCategoryView.vue'
+import AdminView from '@/views/AdminView.vue'
+import SiteConfigView from '@/views/SiteConfigView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,9 +19,19 @@ const router = createRouter({
       component: SortingGuideView
     },
     {
-      path: '/sorteringsguide/haveaffald',
-      name: 'garden-waste',
-      component: GardenWasteView
+      path: '/sorteringsguide/:id',
+      name: 'waste-category',
+      component: WasteCategoryView
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: AdminView
+    },
+    {
+      path: '/admin/:id',
+      name: 'site-config',
+      component: SiteConfigView
     }
   ],
   scrollBehavior() {

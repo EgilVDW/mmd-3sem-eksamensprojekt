@@ -54,7 +54,7 @@ getCategories();
     </div>
   </form>
   <div class="categories">
-    <RouterLink v-for="(category, index) in filteredCategories" :key="index" :to="category.link">
+    <RouterLink v-for="(category, index) in filteredCategories" :key="index" :to="{ path: `/sorteringsguide/${index}` }">
       <CategoryCard>
         <template #title>{{ category.title }}</template>
       </CategoryCard>
