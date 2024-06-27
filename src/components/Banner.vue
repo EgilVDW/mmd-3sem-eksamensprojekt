@@ -25,13 +25,13 @@ const getClosingTime = (site => {
   const time = new Date;
   site.openingHours.unshift(site.openingHours.pop());
   if ((site.openingHours[time.getDay()].from || site.openingHours[time.getDay()].to)) {
-    for (let i = time.getDay(); i < site.openingHours.length && firstMatch; i++) {
+    for (let i = time.getDay(); i < site.openingHours.length && !firstMatch; i++) {
       if (!(site.openingHours[i].from || site.openingHours[i].to)) {
         firstMatch = i;
       }
     }
     if (!firstMatch) {
-      for (let i = 0; i < time.getDay() && firstMatch == null; i++) {
+      for (let i = 0; i < time.getDay() && !firstMatch; i++) {
         if (!(site.openingHours[i].from || site.openingHours[i].to)) {
           firstMatch = i;
         }
